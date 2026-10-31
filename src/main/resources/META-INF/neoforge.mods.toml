@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="sable_high_altitude_transit"
+version="${version}"
+displayName="Sable High Altitude Transit"
+description='''Keeps Sable constructions physically active above Y 400 without loading Minecraft chunks.'''
+
+[[mixins]]
+config="sable_high_altitude_transit.mixins.json"
+
+[[dependencies.sable_high_altitude_transit]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.235,22)"
+ordering="NONE"
+side="SERVER"
+
+[[dependencies.sable_high_altitude_transit]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="SERVER"
+
+[[dependencies.sable_high_altitude_transit]]
+modId="sable"
+type="required"
+versionRange="[2.0.5,2.1)"
+ordering="AFTER"
+side="SERVER"
